@@ -8,8 +8,9 @@ import { AuthProvider } from './context/AuthContext.jsx'
 import { Toaster } from 'react-hot-toast'
 import axios from 'axios'
 
-axios.defaults.baseURL= "http://localhost:5000/api/v1";
-// axios.defaults.baseURL= `${window.location.origin}/api/v1`;
+// axios.defaults.baseURL= "http://localhost:5000/api/v1";
+axios.defaults.baseURL= "https://chat-bot-backend-eight.vercel.app/api/v1";
+
 axios.defaults.withCredentials= true;
 
 const theme = createTheme({
