@@ -28,7 +28,7 @@ const Login = () => {
     if (auth?.user) {
       return navigate("/");
     }
-  }, [auth]);
+  }, [auth, navigate]);
 
   return (
     <>
